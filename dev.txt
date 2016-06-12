@@ -1,0 +1,5 @@
+We can attach an action button that opens a panel. The panel contains the following:
+- The list of all tab groups at the top (maybe eventually we'll sort by usage) 
+  - Each tab group has another 
+- The option to add a new group 
+

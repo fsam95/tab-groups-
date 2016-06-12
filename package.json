@@ -1,0 +1,16 @@
+{
+  "title": "Tab Groups",
+  "name": "tab-groups",
+  "version": "0.0.1",
+  "description": "An add on that lets you save groups of tabs in a simple manner",
+  "main": "index.js",
+  "author": "Samir",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
