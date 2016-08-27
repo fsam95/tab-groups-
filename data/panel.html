@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+
+    <script type="text/javascript">
+      function validateForm() {
+        console.log(localStorage);
+        var group_name = document.forms["new_group"]["group_name"].value;
+        console.log("hello");
+        localStorage.setItem(group_name, JSON.stringify([]));
+        console.log(location.origin);
+      }
+    </script>
+  <body>
+    <ul id="group_names">
+    </ul>
+    <script type="text/javascript">
+      for (var i=0; i < localStorage.length; i++){
+        var group = document.createElement("li");
+        var group_name = document.createTextNode(localStorage.key(i));
+        group.appendChild(group_name);
+        var group_names = document.getElementById("group_names");
+        group_names.appendChild(group);
+      }
+    </script>
+    <form name="new_group" onsubmit="return validateForm()" method="post">
+      New Group: <input type="text" name="group_name">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>

@@ -1,19 +1,12 @@
-var main = require("../");
+var index = require("../index"); //assuming that tabgroups refers to tabgroups.js
 
-exports["test main"] = function(assert) {
-  assert.pass("Unit test running!");
-};
-
-exports["test main async"] = function(assert, done) {
-  assert.pass("async Unit test running!");
-  done();
-};
-
-exports["test dummy"] = function(assert, done) {
-  main.dummy("foo", function(text) {
-    assert.ok((text === "foo"), "Is the text actually 'foo'");
-    done();
-  });
-};
+/*
+ * This isn't a very good test given that show() is asynchronous.
+ * How do you even test asynchronous things? 
+ */
+exports["test panel shows up"] = function(assert) {
+  index.action_button.click(); 
+  assert.equal(index.groups_panel.isShowing == true, true, "Action button works boi!!"); 
+}
 
 require("sdk/test").run(exports);

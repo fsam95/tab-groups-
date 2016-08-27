@@ -3,3 +3,32 @@ We can attach an action button that opens a panel. The panel contains the follow
   - Each tab group has another 
 - The option to add a new group 
 
+Where were we?
+  - Trying to set up the panel, or rather tests for the panel.
+    - One of the two rather difficu
+
+Panels
+------
+Content for the panel is provided by the html page
+
+Tests
+-----
+Things we can test:
+  1. Assert that pressing the ActionButton (is that what it's called?) 
+     results in the panel showing up 
+
+TODO
+----
+Go over variable access in Javascript
+  - Can we access the action_button and panel?  
+    - Yes but they have to be exported.
+      - Everything in javascript has to be exported this is so silly
+
+What should the panel look like? 
+  - For now, we should get it to take a url and save it
+    - yippee
+
+August 27, 2016
+---------------
+A nigga jjust tryna get paid. What's next?
+  - list all of the groups 
