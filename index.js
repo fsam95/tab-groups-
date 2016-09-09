@@ -17,4 +17,3 @@ var groups_panel = require("sdk/panel").Panel({
 
 exports.action_button = action_button;
 exports.groups_panel = groups_panel;
-
